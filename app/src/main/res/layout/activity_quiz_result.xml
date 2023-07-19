@@ -1,0 +1,54 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".Quiz_Select">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="635dp"
+        android:layout_height="1093dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/orangeblue" />
+
+    <TextView android:id="@+id/tv_rank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="32dp" android:layout_marginTop="8dp" android:text="あなたの得点*ランク" android:textColor="@color/black" android:textSize="24sp" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="結果発表"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@+id/tv_score" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="16dp" android:layout_marginEnd="50dp" android:text="100" android:textAlignment="viewEnd" android:textColor="@color/black" android:textSize="160sp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@+id/tv_rank"/>
+
+    <Button
+        android:id="@+id/bt_home"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="ホーム"
+        android:textSize="20sp"
+        app:backgroundTint="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:id="@+id/textView8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点" android:textColor="@color/black" android:textSize="48sp" app:layout_constraintBottom_toBottomOf="@+id/tv_score" app:layout_constraintStart_toEndOf="@+id/tv_score"/>
+
+    <ImageView
+        android:id="@+id/iV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bt_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_score"
+        app:srcCompat="@android:drawable/divider_horizontal_dark" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

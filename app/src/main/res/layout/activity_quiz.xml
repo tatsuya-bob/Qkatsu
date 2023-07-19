@@ -1,0 +1,113 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".Create_Account">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="635dp"
+        android:layout_height="1093dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497"
+        app:srcCompat="@drawable/orangeblue" />
+
+    <TextView android:id="@+id/tv_qid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:text="問題id" android:textColor="@color/black" app:layout_constraintStart_toEndOf="@+id/tv_num" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView android:id="@+id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:text="問題番号" android:textColor="@color/black" app:layout_constraintStart_toEndOf="@+id/tv_q_main" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView android:id="@+id/tv_q_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginTop="8dp" android:text="出題画面" android:textColor="@color/black" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_q"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_border"
+        android:backgroundTint="@color/rightblue"
+        android:text="以下のプログラムを実行した際に\n出力される例外の型を選びなさい。\nx = 10/0\n\n1:ArithmeticError\n2:ValueError\n3:ZeroDivisionError\n4:RuntimeError"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_q_main"
+        app:layout_constraintVertical_bias="0.0" />
+    <Button android:id="@+id/bt_A" android:layout_width="0dp" android:layout_height="70dp" android:layout_marginStart="8dp" android:layout_marginEnd="8dp" android:layout_marginBottom="16dp" android:backgroundTint="@color/design_default_color_error" android:text="回答" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toEndOf="@+id/bt_home"/>
+    <Button android:id="@+id/bt_home" android:layout_width="wrap_content" android:layout_height="70dp" android:layout_marginStart="8dp" android:layout_marginBottom="16dp" android:backgroundTint="@color/black" android:text="ホーム" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/text_border"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bt_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbA0"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="68dp"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="1"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/rbA1"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/rbA2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton8" />
+
+        <RadioButton
+            android:id="@+id/rbA3"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="3"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton12" />
+
+        <RadioButton
+            android:id="@+id/rbA4"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="onRadioButtonClicked"
+            android:text="4"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioButton13" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
